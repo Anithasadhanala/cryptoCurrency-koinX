@@ -2,7 +2,9 @@ import {homeBackground} from "../utils/urls"
 
 const Home = ()=>{
   return(
-    <h1>head</h1>
+    <h1 className="text-3xl font-bold underline">
+    Hello world!
+  </h1>
   )
 }
 
