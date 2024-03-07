@@ -1,5 +1,7 @@
 import { IoTriangleSharp } from "react-icons/io5";
 import { PiPercent } from "react-icons/pi";
+
+
 const Percentage = (props)=>{
 
     const {details} = props
