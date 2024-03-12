@@ -1,1 +1,0 @@
-export const homeBackground = "https://img.freepik.com/free-vector/data-security-technology-background-vector-blue-tone_53876-112201.jpg?w=996&t=st=1709750382~exp=1709750982~hmac=6e7970afc0f9df2ba31799d475676ac69874707cb87d84dd22177636554aa8e8"

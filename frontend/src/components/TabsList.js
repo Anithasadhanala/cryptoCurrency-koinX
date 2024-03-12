@@ -1,6 +1,11 @@
 import {Box,Tab}  from "@mui/material"
 import {TabContext, TabList,TabPanel} from "@mui/lab"
 import {useState} from "react"
+import PerformanceBoard from "@/components/PerformanceBoard";
+import Sentiment from "@/components/Sentiment";
+import About from "@/components/About";
+import Tokenomics from "@/components/Tokenomics";
+import Team from "@/components/Team";
 import tabItems from "../utils/constants"
 
 
@@ -10,16 +15,16 @@ const TabsList = ()=>{
     const [value,setvalue] = useState("1")
 
     const handleChange=(event,newValue)=>{
-        console.log(newValue)
+        
         setvalue(newValue)
     }
 
     return(
         
-<Box className="overflow-x-auto">
+<Box className="overflow-x-auto mb-6">
     <TabContext value={value}>
         <Box sx={{borderBottom:1, borderColor: "divider"}}>
-            <TabList aria-label="Tabs example" onChange={handleChange}>
+            <TabList aria-label="Tabs example" onChange={handleChange} variant="scrollable" scrollButtons="auto">
             <Tab label="Overview" className="sans-serif text-grey-500 font-semibold  text-[12px] " value="1"/>
             <Tab label="Fundamentals" className="sans-serif text-grey-500 font-semibold text-[12px]" value="2"/>
             <Tab label="New Insights" className="sans-serif text-grey-500 font-semibold text-[12px]" value="3"/>
@@ -29,13 +34,40 @@ const TabsList = ()=>{
             <Tab label="Tokenomics" className="sans-serif text-grey-500 font-semibold text-[12px]" value="7"/>
          </TabList>
         </Box>
-        <TabPanel value="1">1</TabPanel>
-        <TabPanel value="2">2</TabPanel>
-        <TabPanel value="3">3</TabPanel>
-        <TabPanel value="4">4</TabPanel>
-        <TabPanel value="5">5</TabPanel>
-        <TabPanel value="6">6</TabPanel>
-        <TabPanel value="7">7</TabPanel>
+
+
+        <TabPanel value="1">
+            <>
+            <PerformanceBoard/>
+            <Sentiment/>
+            <About/>
+            <Tokenomics/>
+            <Team/>
+               
+              
+               
+                
+            </>
+        </TabPanel>
+        <TabPanel value="2">
+            <PerformanceBoard/>
+        </TabPanel>
+        <TabPanel value="3">
+            <About/>
+        </TabPanel>
+        <TabPanel value="4">
+            <Sentiment/>
+        </TabPanel>
+        <TabPanel value="5">
+            <Team/>
+        </TabPanel>
+        <TabPanel value="6">
+            <PerformanceBoard/>
+        </TabPanel>
+        <TabPanel value="7">
+            <Tokenomics/>
+        </TabPanel>
+      
     </TabContext>
 
 </Box>

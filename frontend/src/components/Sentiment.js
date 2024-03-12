@@ -5,7 +5,7 @@ import { PiPercent } from "react-icons/pi";
 
 const Sentiment = () => {
 
-    console.log(eventsList)
+    
 
     return(
     <div className="bg-white rounded-md p-4 ml-2 mr-4 md:ml-0 md:mr-0 mt-10">

@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import {trendingCoinsGetUrl} from "../constants"
+import {trendingCoinsGetUrl} from "../../constants"
 
 
 const useTrendingCoins = () =>{
     const [trendingData, setTrendingData] = useState([]);
     const url = trendingCoinsGetUrl
 
+  
     useEffect(() => {
 
         const fetchTrendingData = async() =>{
@@ -19,8 +20,9 @@ const useTrendingCoins = () =>{
       
       },[]);
 
-      return trendingData
 
+
+      return trendingData
 }
 
 export default useTrendingCoins

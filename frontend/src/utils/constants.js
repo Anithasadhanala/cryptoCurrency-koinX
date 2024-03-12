@@ -2,9 +2,11 @@ export const Logo = "https://asset.cloudinary.com/ds7ld7kqo/49bbc35ec771a0bde5d8
 
 export const getStartedImg = "https://asset.cloudinary.com/ds7ld7kqo/9fd09759a44c80fdf4d3397874df2485"
 
-
 export const trendingCoinsGetUrl = "https://api.coingecko.com/api/v3/search/trending"
 
+export const coinSingleDataUrl = "https://api.coingecko.com/api/v3/coins/bitcoin"
+
+export const coinPriceUrl ="https://api.coingecko.com/api/v3/simple/price"
 
 export const tabItems =[
 
@@ -63,7 +65,6 @@ export const eventsList = [
     },
 ]
 
-
 export const teamMembersList = [
 
     {
@@ -80,7 +81,7 @@ export const teamMembersList = [
         "image" : "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?t=st=1709827913~exp=1709831513~hmac=fa99e59abe6cfad953bae30e0ab6f8feb4232f94c2dfa76574e78196d6d47d03&w=996",
     },
     {
-        "id" : 1,
+        "id" : 3,
         "name" : "Albertrose",
         "designation" : "Sales Executive",
         "image" : "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1709828129~exp=1709831729~hmac=e4cf68e2bc9e9758d398cb37584b63d238dbaa92ee6c2cd4e7952b1ad0178910&w=996",

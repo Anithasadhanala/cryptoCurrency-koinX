@@ -1,4 +1,3 @@
-import {homeBackground} from "../utils/urls"
 
 const Home = ()=>{
   return(

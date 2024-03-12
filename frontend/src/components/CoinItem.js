@@ -11,7 +11,7 @@ const CoinItem = (props)=>{
     return(
         <div className="flex justify-between mr-4 mb-3">
             <div className="flex">
-                <img src={small}  class="h-[22px] w-[22px] md:h-[30px] md:w-[30px]" alt={name}/>
+                <img src={small}  className="h-[22px] w-[22px] md:h-[30px] md:w-[30px]" alt={name}/>
                 <h1 className="sans-serif text-zinc-500  font-medium pt-0 md:pt-1 pl-3 text-[12px] md:text-sm ">{name} ({symbol})</h1>
             </div>
         
